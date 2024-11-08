@@ -1,0 +1,17 @@
+.scrollytelling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrollytelling section {
+    margin-bottom: 2rem; /* Juster margin for spacing */
+    opacity: 0; /* Start som usynlig */
+    transform: translateY(20px); /* Start med en lille forskydning */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animering af opacity og transform */
+}
+
+.scrollytelling section.in-view {
+    opacity: 1; /* Bliv synlig */
+    transform: translateY(0); /* Vend tilbage til sin normale position */
+}
