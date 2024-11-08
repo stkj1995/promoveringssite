@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "promoveringssite",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -17,12 +17,19 @@
     "alpinejs": "^3.14.1",
     "animate.css": "^4.1.1",
     "astro": "^4.13.3",
-    "motion": "^10.18.0"
+    "autoprefixer": "^10.4.20",
+    "motion": "^10.18.0",
+    "postcss": "^8.4.47"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.14",
-    "tailwindcss": "^3.4.9"
-  }
+    "tailwindcss": "^3.4.14"
+  },
+  "description": "```sh\r npm create astro@latest -- --template minimal\r ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
