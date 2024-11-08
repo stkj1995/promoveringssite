@@ -1,24 +1,37 @@
 ---
 import { animate } from 'motion';
+import { Image } from 'astro:assets';
 import 'animate.css';
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
-import whitewall from '../assets/images/whitewall';
+import whitewall from '../assets/images/whitewall.jpg';
+import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---
 
 <MainLayout title="Promoveringssite">
 	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen">
-		<Image src={whitewall} class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 h-full md:w-full md:object-cover" alt="" />
-		<!-- <Image src={heroturtle} class="col-start-4 col-span-2 row-start-2 row-span-2 animate-swim z-10 object-contain" alt="" /> -->
+		<Image 
+		  src={whitewall} 
+		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 h-full md:w-full md:object-cover opacity-30" 
+		  alt="hvid strukturbaggrund" 
+		/>
 		
-		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16">
-			<h1 class="text-5xl md:text-8xl animate__animated animate__fadeInUp">#SingleUseSucks</h1>
-			<h2 class="text-3xl md:text-5xl animate__animated animate__fadeInUp">Beskyt vores verden mod plastikforurening nu!</h2>
+		<div class="col-start-1 col-span-5 row-start-1 row-span-5 flex justify-center items-center z-10">
+		  <Image 
+			src={sophietypeface} 
+			class="w-[800px] h-[800px] object-contain" 
+			alt="typeface" 
+		  />
 		</div>
-	</section>
-
+	  
+		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16">
+		  <h1 class="text-2xl md:text-4xl animate__animated animate__fadeInUp">Præsenterer - Skrifttypen SOPHIE</h1>
+		  <h2 class="text-xl md:text-2xl animate__animated animate__fadeInUp">En unik, tidløs display-skrift inspireret af klassiske serif-skrifttyper med et moderne twist</h2>
+		</div>
+	  </section>
+	  
 
 	<div class="scrollytelling bg-gray-100 py-8"> <!-- Justeret baggrundsfarve -->
 	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
@@ -37,7 +50,7 @@ import '../styles/global.css';
 			<li>Statistikker viser, at børn i alderen 10-15 år begynder at tage større beslutninger om deres sociale liv, herunder venner og fritidsaktiviteter.</li>
 		</ul>
 
-		<img src={Linjegraf} alt="Linjegraf" class="w-full h-auto rounded-md shadow-lg mb-4 mx-auto animate__animated" />
+		<!-- <img src={Linjegraf} alt="Linjegraf" class="w-full h-auto rounded-md shadow-lg mb-4 mx-auto animate__animated" /> -->
 
 		<Button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4">Læs mere</Button> <br>
 		<p class="text-gray-600 mb-4">For flere detaljer, besøg <Link href="https://www.kea.dk" target="_blank" class="text-blue-500 hover:underline">Københavns Erhvervsakademi</Link>.</p>
