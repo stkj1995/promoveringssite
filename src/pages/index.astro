@@ -4,11 +4,22 @@ import 'animate.css';
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
-import Linjegraf from '../assets/images/Linjegraf.svg?url';
+import whitewall from '../assets/images/whitewall';
 import '../styles/global.css'; 
 ---
 
-<MainLayout title="Forældrestatistik">
+<MainLayout title="Promoveringssite">
+	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen">
+		<Image src={whitewall} class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 h-full md:w-full md:object-cover" alt="" />
+		<!-- <Image src={heroturtle} class="col-start-4 col-span-2 row-start-2 row-span-2 animate-swim z-10 object-contain" alt="" /> -->
+		
+		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16">
+			<h1 class="text-5xl md:text-8xl animate__animated animate__fadeInUp">#SingleUseSucks</h1>
+			<h2 class="text-3xl md:text-5xl animate__animated animate__fadeInUp">Beskyt vores verden mod plastikforurening nu!</h2>
+		</div>
+	</section>
+
+
 	<div class="scrollytelling bg-gray-100 py-8"> <!-- Justeret baggrundsfarve -->
 	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
 		<h1 class="text-4xl font-bold text-gray-800 mb-4">Forældrestatistik: Hvad viser tallene?</h1> <!-- Større overskrift -->

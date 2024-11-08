@@ -4,29 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        orange: "#FF6F3C", // Orange farve som du ønsker
-        darkblue: "#013755", // Mørkeblå
-        lightblue: "#e6f6ff", // Lyseblå
+        pastelgreyblue: "#C3D1E3", // Pastel gråblå
+        greenblue: "#7AA89F", //Blågrøn
+        kingblue: "#3A4DA3", // Kongeblå
         white: "#ffffff", // Hvid
-      },
-      keyframes: {
-        changeColor: { // Tilføjet animation for farveskift
-          // "0%": { color: "#013755" }, // Mørkeblå
-          // "100%": { color: "#E65100" }, // Mørk orange
-        },
-      },
-      animation: {
-        // changeColor: "changeColor 10s forwards", // Kører animationen én gang
-      },
-      width: {
-        // "70p": "80%",
-        // "22p": "35%",
-        // "8p": "20%",
-      },
-      height: {
-        // "70p": "80%",
-        // "22p": "35%",
-        // "8p": "20%",
+        black: "#000000", //Sort
+        beige: "#F7F5EF", //lys beige
       },
     },
   },
