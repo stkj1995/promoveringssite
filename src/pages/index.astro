@@ -11,10 +11,10 @@ import '../styles/global.css';
 ---
 
 <MainLayout title="Promoveringssite">
-	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen">
+	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen" id="hero">
 		<Image 
 		  src={whitewall} 
-		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 h-full md:w-full md:object-cover opacity-30" 
+		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[800px] h-[1000px] md:w-full md:object-cover opacity-30 mb-10" 
 		  alt="hvid strukturbaggrund" 
 		/>
 		
@@ -26,17 +26,31 @@ import '../styles/global.css';
 		  />
 		</div>
 	  
-		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16">
-		  <h1 class="text-2xl md:text-4xl animate__animated animate__fadeInUp">Præsenterer - Skrifttypen SOPHIE</h1>
-		  <h2 class="text-xl md:text-2xl animate__animated animate__fadeInUp">En unik, tidløs display-skrift inspireret af klassiske serif-skrifttyper med et moderne twist</h2>
+		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16 py-10" id="hero-tekst">
+		  <h1 class="text-center text-2xl md:text-3xl animate__animated animate__fadeInUp text-kingblue" id="overskrift">Oplev SOPHIE - En skrifttype med karakter</h1>
+		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-greenblue" id="underoverskrift">En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.</h2>
+		
+		  <section class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl" id="præsentation">
+			<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
+			  SOPHIE er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg
+			</p>
+			<p class="text-right text-lg md:w-1/2 text-greenblue" id="copy">
+			  Velkommen til præsentationen af SOPHIE – en skrift designet til at være lige så tidløs som den er modig. Med SOPHIE bliver ord til kunst.
+			</p>
+		  </section>
+		  
 		</div>
-	  </section>
+	</section>
+
+
+
+
 	  
 
-	<div class="scrollytelling bg-gray-100 py-8"> <!-- Justeret baggrundsfarve -->
+	<!-- <div class="scrollytelling mt-72">
 	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
-		<h1 class="text-4xl font-bold text-gray-800 mb-4">Forældrestatistik: Hvad viser tallene?</h1> <!-- Større overskrift -->
-		<p class="text-gray-700 mb-4 leading-relaxed"> <!-- Justeret tekstfarve og linjeafstand -->
+		<h1 class="text-4xl font-bold text-gray-800 mb-4">Forældrestatistik: Hvad viser tallene?</h1> 
+		<p class="text-gray-700 mb-4 leading-relaxed"> 
 		  Statistikker om forældreskab giver os værdifuld indsigt i, hvordan moderne familier fungerer, og hvilke udfordringer de står over for. Seneste tal viser en stigende tendens til, at forældre i Danmark oplever stress og pres i hverdagen, samtidig med at børnene bliver mere uafhængige i deres valg.
 		</p>
 	  </section>
@@ -50,7 +64,7 @@ import '../styles/global.css';
 			<li>Statistikker viser, at børn i alderen 10-15 år begynder at tage større beslutninger om deres sociale liv, herunder venner og fritidsaktiviteter.</li>
 		</ul>
 
-		<!-- <img src={Linjegraf} alt="Linjegraf" class="w-full h-auto rounded-md shadow-lg mb-4 mx-auto animate__animated" /> -->
+		
 
 		<Button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4">Læs mere</Button> <br>
 		<p class="text-gray-600 mb-4">For flere detaljer, besøg <Link href="https://www.kea.dk" target="_blank" class="text-blue-500 hover:underline">Københavns Erhvervsakademi</Link>.</p>
@@ -65,7 +79,7 @@ import '../styles/global.css';
 		<h2 class="text-2xl font-semibold text-gray-700 mb-2">Konklusion</h2>
 		<p class="text-gray-600 mb-4">Forældre har brug for støtte i en verden, der konstant ændrer sig. At forstå og adressere de udfordringer, forældre står over for, er afgørende for at sikre, at både forældre og børn kan trives i samfundet.</p>
 	  </section>
-	</div>
+	</div> -->
 </MainLayout>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>

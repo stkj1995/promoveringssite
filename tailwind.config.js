@@ -5,8 +5,8 @@ export default {
     extend: {
       colors: {
         pastelgreyblue: "#C3D1E3", // Pastel gråblå
-        greenblue: "#7AA89F", //Blågrøn
-        kingblue: "#3A4DA3", // Kongeblå
+        turkish: "#51A1E1", //turkis
+        kingblue: "#0E4E87", // Kongeblå
         white: "#ffffff", // Hvid
         black: "#000000", //Sort
         beige: "#F7F5EF", //lys beige
