@@ -6,6 +6,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import whitewall from '../assets/images/whitewall.jpg';
+import harlekin from '../assets/images/harlekin.jpg';
 import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---
@@ -13,8 +14,8 @@ import '../styles/global.css';
 <MainLayout title="Promoveringssite">
 	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen" id="hero">
 		<Image 
-		  src={whitewall} 
-		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[800px] h-[1008px] md:w-full md:object-cover opacity-30 mb-10" 
+		  src={harlekin} 
+		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[800px] h-[1008px] md:w-full md:object-cover opacity-5 mb-10" 
 		  alt="hvid strukturbaggrund" 
 		/>
 		
@@ -27,8 +28,8 @@ import '../styles/global.css';
 		</div>
 	  
 		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16 py-10" id="hero-tekst">
-		  <h1 class="text-center text-2xl md:text-3xl animate__animated animate__fadeInUp text-kingblue" id="overskrift">Oplev SOPHIE - En skrifttype med karakter</h1>
-		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-greenblue" id="underoverskrift">En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.</h2>
+		  <h1 class="font-bold text-almostblack text-center text-2xl md:text-3xl animate__animated animate__fadeInUp mt-2" id="overskrift">Oplev SOPHIE - En skrifttype med karakter</h1>
+		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.</h2>
 		
 		  <section class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl" id="præsentation">
 			<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
@@ -42,19 +43,19 @@ import '../styles/global.css';
 		</div>
 	</section>
 
-	<section id="inspiration" class="bg-[#C3D1E3] py-20 text-center mt-52">
-		<h2 class="text-5xl font-bold text-gray-900">Historien bag SOPHIE</h2>
-		<p class="text-lg mt-6 mx-auto max-w-3xl text-gray-700">
+	<section id="inspiration" class="bg-pastelblue py-20 text-center mt-52">
+		<h2 class="text-5xl font-bold text-almostblack">Historien bag SOPHIE</h2>
+		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
 		  SOPHIE er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. Inspireret af tidløse klassikere som Didot og Avenir, har SOPHIE fået tilføjet et moderne harlekinmønster, der gør den unik.
 		</p>
-		<blockquote class="italic text-xl text-[#7AA89F] mt-8 mx-auto max-w-2xl">
+		<blockquote class="italic text-xl text-turkish mt-8 mx-auto max-w-2xl">
 		  "Når klassisk møder moderne, opstår noget helt nyt – SOPHIE."
 		</blockquote>
 	</section>
 
-	<section id="examples" class="bg-[#3A4DA3] text-white py-20 text-center">
-		<h2 class="text-5xl font-bold">Skab Stærke Designs med SOPHIE</h2>
-		<p class="text-xl mt-4">Se, hvordan SOPHIE kan bruges i plakater, logoer, og meget mere.</p>
+	<section id="examples" class="bg-kingblue text-white py-20 text-center">
+		<h2 class="text-5xl font-bold text-almostblack">Skab Stærke Designs med SOPHIE</h2>
+		<p class="text-xl mt-4 ">Se, hvordan SOPHIE kan bruges i plakater, logoer, og meget mere.</p>
 		<p class="text-lg mt-6 mx-auto max-w-3xl">
 		  SOPHIE er designet til at fange opmærksomhed og løfte ethvert design. Dens skarpe linjer og mønster skaber en smuk kontrast i både klassiske og moderne designs.
 		</p>
@@ -70,12 +71,12 @@ import '../styles/global.css';
 		</div>
 	</section>
 
-	<section id="details" class="bg-[#F7F5EF] py-20 text-center">
-		<h2 class="text-5xl font-bold text-gray-900">Fleksibiliteten i SOPHIE</h2>
-		<p class="text-lg mt-6 mx-auto max-w-3xl text-gray-700">
+	<section id="details" class="bg-beige py-20 text-center">
+		<h2 class="text-5xl font-bold text-almostblack">Fleksibiliteten i SOPHIE</h2>
+		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
 		  Fra vintage inspirerede plakater til moderne digitale designs – SOPHIE fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
 		</p>
-		<p class="text-lg mt-8 mx-auto max-w-3xl font-semibold italic">
+		<p class="text-lg mt-8 mx-auto max-w-3xl font-semibold italic text-brown">
 		  Giv dit design en stemme med SOPHIE – en skrifttype, der taler for sig selv.
 		</p>
 	</section>

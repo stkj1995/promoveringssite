@@ -4,11 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        turkish: "#51A1E1", //turkis
+        turkish: "#3D9AEB", //turkis
         kingblue: "#0E4E87", // Kongeblå
         white: "#ffffff", // Hvid
         almostblack: "#03101C", //Sort
         beige: "#F7F5EF", //lys beige
+        pastelblue: "#DFEEFC", //pastelblå
+        brown: "#817141", //brun
       },
     },
   },
