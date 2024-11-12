@@ -8,6 +8,14 @@ import Link from '../components/Link.astro';
 import whitewall from '../assets/images/whitewall.jpg';
 import harlekin from '../assets/images/harlekin.jpg';
 import downarrow from '../assets/images/down-arrow-black.png';
+import poster from '../assets/images/poster.png';
+import motivation from '../assets/images/motivation.png';
+import musikfestival from '../assets/images/musikfestival.png';
+import event from '../assets/images/event.png';
+import cv from '../assets/images/cv.png';
+import beauty from '../assets/images/beauty.png';
+import artshop from '../assets/images/artshop.png';
+import invite from '../assets/images/invite.png';
 import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---
@@ -48,7 +56,7 @@ import '../styles/global.css';
 		  <h1 class="font-playfair font-bold text-kingblue text-3xl md:text-4xl text-center md:mt-24" id="overskrift">
 			OPLEV EN SKRIFTTYPE MED KARAKTER
 		  </h1>
-		  <h2 class="text-center text-xl md:text-2xl font-playfair font-semibold text-turkish mt-6 max-w-3xl mx-auto md:mt-16">
+		  <h2 class="text-center text-xl md:text-2xl font-playfair font-semibold text-turkish mt-6 max-w-3xl mx-auto md:mt-12">
 			En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.
 		  </h2>
 		
@@ -65,7 +73,7 @@ import '../styles/global.css';
 	  
 	<section id="inspiration" class="bg-beige md:pt-20 md:pb-20 text-center md:text-center md:mt-36">
 		<h1 class="font-playfair font-bold text-kingblue text-3xl">INSPIRATION OG KONCEPT</h1>
-		<h2 class="font-playfair font-light text-turkish text-2xl md:text-3xl mt-4 md:mt-6">Historien bag displayet</h2>
+		<!-- <h2 class="font-playfair font-light text-turkish text-2xl md:text-3xl mt-4 md:mt-6">Historien bag displayet</h2> -->
 	  
 		<!-- Text content with margin adjustments for symmetry -->
 		<div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-6 mx-auto max-w-3xl px-4">
@@ -86,38 +94,44 @@ import '../styles/global.css';
 			<!-- SOPHIE image to the right with zoom animation -->
 			<Image 
 			src={sophietypeface} 
-			class="w-[200px] h-[200px] object-contain animate__animated animate__zoomIn md:w-[300px] md:h-[200px]" 
+			class="w-[200px] h-[200px] object-contain animate__animated animate__zoomIn animate-pulse md:w-[300px] md:h-[200px]" 
 			alt="typeface" 
 			/>
 		</div>
 	</section>
+
+	<section id="examples" class="bg-gradient-to-b from-kingblue to-pastelblue text-white md:pt-20 text-center md:pb-20">
+		<h1 class="font-playfair font-bold text-white text-4xl md:text-5xl drop-shadow-lg">EKSEMPLER OG ANVENDELSE</h1>
 		
-	<section id="examples" class="bg-kingblue text-white md:pt-20 text-center">
-		<h1 class="font-playfair font-bold text-white text-3xl">EKSEMPLER</h1>
-		<h2 class="font-playfair text-5xl font-bold text-almostblack">Skab stærke designs med <span class="font-bold">SOPHIE</span>-display</h2>
-		<p class="font-playfair text-xl mt-4 ">Se, hvordan SOPHIE kan bruges i plakater, logoer, og meget mere.</p>
-		<h3 class="font-playfair text-lg mt-6 mx-auto max-w-3xl">
-			<span class="font-bold">SOPHIE</span> er designet til at fange opmærksomhed og løfte ethvert design. Dens skarpe linjer og mønster skaber en smuk kontrast i både klassiske og moderne designs.
-		</h3>
-		<div class="flex justify-center mt-10 space-x-8">
-		  <div class="w-1/3">
-			<img src="/path/to/mockup1.jpg" alt="Plakat Mockup" class="rounded-lg shadow-lg">
-			<p class="mt-4">Plakat eksempel</p>
-		  </div>
-		  <div class="w-1/3">
-			<img src="/path/to/mockup2.jpg" alt="Logo Mockup" class="rounded-lg shadow-lg">
-			<p class="mt-4">Logo eksempel</p>
-		  </div>
+		<div class="flex flex-col items-center gap-6 mt-6 mx-auto max-w-3xl px-4">
+			<h3 class="font-playfair text-lg md:text-xl text-left leading-relaxed">
+				<span class="font-bold">SOPHIE</span> er designet til at fange opmærksomhed og løfte ethvert design. Dens skarpe linjer og mønster skaber en smuk kontrast i både klassiske og moderne designs.
+				<br><br>Se nedenfor, hvordan <span class="font-bold">SOPHIE</span> kan bruges i plakater, logoer, og meget mere.
+			</h3>
 		</div>
 	</section>
-
-	<section id="details" class="bg-pastelblue py-20 text-center">
-		<h1 class="font-playfair font-bold text-kingblue text-3xl">ANVENDELSE</h1>
-		<h2 class="text-5xl font-bold text-almostblack">Fleksibiliteten i displayet</h2>
-		<h3 class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
-		  Fra vintage inspirerede plakater til moderne digitale designs – <span class="font-bold">SOPHIE</span> fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
-		</h3>
+	
+	
+	<section class="bg-pastelblue text-almostblack md:pt-20 text-center md:pb-20">	
+		<div class="grid grid-cols-2 gap-4 mt-10 justify-items-center md:px-20">
+		  <Image src={poster} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={musikfestival} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={event} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={invite} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={artshop} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={motivation} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={cv} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={beauty} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
+		</div>  
 	</section>
+
+
+		<!-- <h1 class="font-playfair font-bold text-kingblue text-3xl">ANVENDELSE AF DISPLAYET</h1> -->
+		<!-- <h2 class="text-5xl font-bold text-almostblack">Fleksibiliteten</h2> -->
+		<!-- <h3 class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
+		  Fra vintage inspirerede plakater til moderne digitale designs – <span class="font-bold">SOPHIE</span> fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
+		</h3> -->
+
 
 	<!-- <h1 class="font-playfair font-bold text-kingblue text-3xl">
 			Dette er en H1 med Playfair Display Bold
