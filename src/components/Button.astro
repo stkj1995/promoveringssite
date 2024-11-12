@@ -2,6 +2,14 @@
 // Button.astro
 const { text = "DOWNLOAD DISPLAY HER" } = Astro.props;  // Tilføj mulighed for at sende tekst som prop
 ---
-<button class="border-20 bg-turkish text-kingblue font-bold font-playfair p-5 text-xl rounded-lg">
-  {text}
-</button>
+
+<a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank" class="block">
+    <button class="border-2 bg-turkish text-kingblue font-bold font-playfair p-5 text-2xl rounded-lg 
+     hover:bg-kingblue hover:text-turkish transition-all duration-300 transform hover:scale-105">
+    {text}
+    </button>
+ </a>
+
+  
+
+
