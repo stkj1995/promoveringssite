@@ -23,6 +23,10 @@ import invite from '../assets/images/invite.png';
 import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  
 
 <MainLayout title="Promoveringssite">
 	<section class="relative grid-cols-5 w-[99%] min-h-[100px] flex items-start justify-center" id="hero">
@@ -90,7 +94,7 @@ import '../styles/global.css';
 		<h1 class="font-playfair font-bold text-kingblue text-3xl md:text-5xl text-center md:mt-10">INSPIRATION OG KONCEPT</h1>
 	  
 		<!-- Text content with margin adjustments for symmetry -->
-		<div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-6 mx-auto max-w-3xl px-4">
+		<div class="flex flex-col md:flex-row items-center justify-center gap-8 mx-auto max-w-3xl px-4">
 		  <h3 class="font-playfair text-lg text-almostblack text-left md:w-1/2 md:pr-10">
 			<span class="font-bold text-brown italic">SOPHIE</span> er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. 
 			<br><br>Inspireret af tidløse klassikere som <span class="font-semibold text-turkish">Didot, Avenir og Playfair Display</span>, har <span class="font-bold text-brown italic">SOPHIE</span> fået tilføjet et moderne harlekinmønster, der gør den unik. 
@@ -125,41 +129,61 @@ import '../styles/global.css';
 		</div>
 	  
 		<!-- Visual Examples Section -->
-		<div class="flex flex-wrap justify-center gap-8 mt-10 px-4">
-			<div class="max-w-sm space-y-4 md:space-y-6">
-				<!-- <p class="font-playfair font-bold text-white text-lg md:text-xl md:mt-5">PLAKATER</p> -->
-				
-				<!-- Billede 1 -->
-				<Image 
-				  src={poster} 
-				  class="w-[250px] h-[250px] object-contain md:w-[800px] md:h-[530px]" 
-				  alt="typeface" 
-				/>
-				
-				<!-- Billede 2 -->
-				<Image 
-				  src={musikfestival} 
-				  class="w-[250px] h-[250px] object-contain md:w-[800px] md:h-[500px]" 
-				  alt="typeface" 
-				/>
-				
-				<!-- Billede 3 -->
-				<Image 
-				  src={motivation} 
-				  class="w-[250px] h-[250px] object-containx md:w-[800px] md:h-[530px]" 
-				  alt="typeface" 
-				/>
-			  </div>			  
+<div class="flex flex-wrap justify-center gap-8 mt-10 px-4">
+	<div class="max-w-sm space-y-4 md:space-y-6">
 	  
-		  <div class="max-w-sm">
-			<!-- <p class="font-playfair font-bold text-white text-lg md:mt-5">WEBDESIGN</p> -->
-			<Image src={event} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
-			<Image src={invite} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
-			<Image src={artshop} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
-			<Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
-			<Image src={beauty} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
-		  </div>
-		</div>
+	  <!-- Billede 1 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-1s">
+		<Image 
+		  src={poster} 
+		  class="w-[250px] h-[250px] object-contain md:w-[800px] md:h-[530px]" 
+		  alt="typeface" 
+		/>
+	  </div>
+  
+	  <!-- Billede 2 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-1.5s">
+		<Image 
+		  src={musikfestival} 
+		  class="w-[250px] h-[250px] object-contain md:w-[800px] md:h-[500px]" 
+		  alt="typeface" 
+		/>
+	  </div>
+  
+	  <!-- Billede 3 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-2s">
+		<Image 
+		  src={motivation} 
+		  class="w-[250px] h-[250px] object-containx md:w-[800px] md:h-[530px]" 
+		  alt="typeface" 
+		/>
+	  </div>
+	</div>
+	
+	<div class="max-w-sm">
+	  <!-- Billede 4 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-2.5s">
+		<Image src={event} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+	  </div>
+	  <!-- Billede 5 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-3s">
+		<Image src={invite} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
+	  </div>
+	  <!-- Billede 6 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-3.5s">
+		<Image src={artshop} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+	  </div>
+	  <!-- Billede 7 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-4s">
+		<Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
+	  </div>
+	  <!-- Billede 8 -->
+	  <div class="animate__animated animate__fadeInUp animate__delay-4.5s">
+		<Image src={beauty} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+	  </div>
+	</div>
+  </div>
+  
 	  </section> 
 	  
 	  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
