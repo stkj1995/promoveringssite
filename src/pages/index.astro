@@ -154,50 +154,48 @@ import '../styles/global.css';
 		<div class="max-w-sm">
 			<!-- Billede 4 -->
 			<div class="animate__animated animate__fadeInUp animate__delay-2.5s">
-				<Image src={event} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+				<Image src={event} class="w-[200px] h-[250px] object-contain md:w-[300px] md:h-[350px]" alt="typeface" />
 			</div>
 			<!-- Billede 5 -->
 			<div class="animate__animated animate__fadeInUp animate__delay-3s">
-				<Image src={invite} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
+				<Image src={invite} class="w-[200px] h-[250px] object-contain md:w-[300px] md:h-[300px]" alt="typeface" />
 			</div>
 			<!-- Billede 6 -->
 			<div class="animate__animated animate__fadeInUp animate__delay-3.5s">
-				<Image src={artshop} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+				<Image src={artshop} class="w-[200px] h-[250px] object-contain md:w-[300px] md:h-[350px]" alt="typeface" />
 			</div>
 			<!-- Billede 7 -->
 			<div class="animate__animated animate__fadeInUp animate__delay-4s">
-				<Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
+				<Image src={cv} class="w-[200px] h-[200px] object-contain md:w-[300px] md:h-[300px]" alt="typeface" />
 			</div>
 			<!-- Billede 8 -->
 			<div class="animate__animated animate__fadeInUp animate__delay-4.5s">
-				<Image src={beauty} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+				<Image src={beauty} class="w-[200px] h-[250px] object-contain md:w-[300px] md:h-[350px]" alt="typeface" />
 			</div>
 		</div>
 	</section> 
 	  
-	  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
-	  <script type="module">
-		import { animate, inView as motionInView } from 'https://cdn.jsdelivr.net/npm/@motionone/dom@1.0.0-beta.10/dist/motion-one.min.js';
-	  
-		document.addEventListener('DOMContentLoaded', function() {
+	<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+	<script type="module">
+	  import { animate, inView as motionInView } from 'https://cdn.jsdelivr.net/npm/@motionone/dom@1.0.0-beta.10/dist/motion-one.min.js';
+	
+	  document.addEventListener('DOMContentLoaded', function() {
   const images = document.querySelectorAll('.staggered-image');
 
-		const observer = new IntersectionObserver((entries, observer) => {
-			entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				// Tilføj animate klassen, når billedet er synligt
-				entry.target.classList.add('animate');
-				// Stop med at observere dette billede
-				observer.unobserve(entry.target);
-			}
-			});
-		}, { threshold: 0.5 }); // Observerer, når 50% af billedet er synligt
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate'); // Add animation class on scroll
+        observer.unobserve(entry.target); // Stop observing after animation
+      }
+    });
+  }, { threshold: 0.5 });
 
-		// Start observering af billederne
-		images.forEach(image => {
-			observer.observe(image);
-		});
-		});
+  images.forEach(image => {
+    observer.observe(image);
+  });
+});
 
-	  </script>
+	</script>
+	
 	  
