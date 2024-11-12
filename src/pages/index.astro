@@ -16,8 +16,10 @@ import cv from '../assets/images/cv.png';
 import beauty from '../assets/images/beauty.png';
 import artshop from '../assets/images/artshop.png';
 import invite from '../assets/images/invite.png';
-import logo from '../assets/images/logo.png';
-
+// import logo from '../assets/images/logo.png';
+// import logo2 from '../assets/images/S-logo.png';
+// import logo3 from '../assets/images/sophie-logo.png';
+// import logo4 from '../assets/images/logo-colour.png';
 import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---
@@ -63,10 +65,9 @@ import '../styles/global.css';
 			</h2>
 		  
 			<div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8 mx-auto max-w-5xl relative md:mt-12 md:mb-10 px-20" id="tekst">
-  
-				<!-- Første tekstkolonne -->
-				<h3 class="font-playfair text-left text-xl md:text-2xl text-kingblue italic w-full md:mt-8" id="citat">
-				  <span class="font-bold text-turkish">SOPHIE</span> er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg.
+ 
+				<h3 class="font-playfair text-left text-lg md:text-2xl text-greenblue w-full" id="copy">
+				  Velkommen til præsentationen af <span class="font-bold text-turkish italic">SOPHIE</span> – en skrift designet til at være lige så tidløs som den er modig. Med <span class="font-bold text-turkish italic">SOPHIE</span> bliver ord til kunst.
 				</h3>
 				
 				<!-- Billedet i midten -->
@@ -77,10 +78,9 @@ import '../styles/global.css';
 					alt="typeface" 
 				  />
 				</div>
-				
-				<!-- Anden tekstkolonne -->
-				<h3 class="font-playfair text-right text-lg md:text-2xl text-greenblue w-full" id="copy">
-				  Velkommen til præsentationen af <span class="font-bold text-turkish italic">SOPHIE</span> – en skrift designet til at være lige så tidløs som den er modig. Med <span class="font-bold text-turkish italic">SOPHIE</span> bliver ord til kunst.
+
+				<h3 class="font-playfair text-right text-xl md:text-2xl text-kingblue italic w-full" id="citat">
+				  <span class="font-bold text-turkish">SOPHIE</span> er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg.
 				</h3>
 			</div>
 		</div>
@@ -91,7 +91,7 @@ import '../styles/global.css';
 	  
 		<!-- Text content with margin adjustments for symmetry -->
 		<div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-6 mx-auto max-w-3xl px-4">
-		  <h3 class="font-playfair text-lg text-almostblack text-left md:w-1/2 md:px-10">
+		  <h3 class="font-playfair text-lg text-almostblack text-left md:w-1/2 md:pr-10">
 			<span class="font-bold text-brown italic">SOPHIE</span> er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. 
 			<br><br>Inspireret af tidløse klassikere som <span class="font-semibold text-turkish">Didot, Avenir og Playfair Display</span>, har <span class="font-bold text-brown italic">SOPHIE</span> fået tilføjet et moderne harlekinmønster, der gør den unik. 
 			<br><br>Det gør <span class="font-bold text-brown italic">SOPHIE</span> perfekt til visuelle statement-projekter, der kræver mere end blot bogstaver.
@@ -100,7 +100,7 @@ import '../styles/global.css';
 			<!-- Container with flex layout for positioning -->
 		<div class="flex flex-col items-center justify-center gap-10 md:mt-10">
 			<!-- Blockquote with margin adjustments -->
-			<blockquote class="font-playfair font-semibold italic text-xl md:text-1xl text-turkish mx-auto max-w-2xl md:w-1/2 text-right md:text-right md:mt-10 md:mr-2">
+			<blockquote class="font-playfair font-semibold italic text-xl md:text-1xl text-turkish mx-auto max-w-2xl md:w-1/2 text-right md:text-right md:mt-20 md:mr-2">
 			"Når <br> klassisk <br> møder <br> moderne, <br> opstår <br> noget <br> helt <br> nyt."<br>
 			</blockquote>
 		
@@ -115,55 +115,52 @@ import '../styles/global.css';
 
 	<section id="examples" class="bg-gradient-to-b from-kingblue to-pastelblue text-white md:pt-20 text-center md:pb-20">
 		<h1 class="font-playfair font-bold text-white text-4xl md:text-5xl drop-shadow-lg">
-		  EKSEMPLER OG ANVENDELSE
+		  ANVENDELSESMULIGHEDER
 		</h1>
 	  
-		<div class="flex flex-col items-center gap-6 mt-6 mx-auto max-w-3xl px-4">
-		  <h3 class="font-playfair text-lg md:text-xl text-left leading-relaxed">
+		<div class="flex flex-col items-center gap-6 mt-6 mx-auto max-w-3xl px-4 md:pl-8 md:pr-72">
+		  <h3 class="font-playfair text-lg md:text-xl text-left md:my-16">
 			<span class="font-bold">SOPHIE</span> er designet til at fange opmærksomhed og løfte ethvert design. Med sine markante linjer og unikke mønster skaber den en smuk kontrast, der fungerer både i klassiske og moderne designs.
-			<br><br> Se nedenfor, hvordan <span class="font-bold">SOPHIE</span> kan anvendes i plakater, logoer, og webdesign for at skabe visuelle statement.
 		  </h3>
 		</div>
 	  
 		<!-- Visual Examples Section -->
 		<div class="flex flex-wrap justify-center gap-8 mt-10 px-4">
-		  <div class="max-w-sm">
-			<p class="font-playfair font-bold text-white text-lg">Plakater</p>
-			<Image src={poster} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-			<Image src={musikfestival} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  </div>
+			<div class="max-w-sm space-y-4 md:space-y-6">
+				<!-- <p class="font-playfair font-bold text-white text-lg md:text-xl md:mt-5">PLAKATER</p> -->
+				
+				<!-- Billede 1 -->
+				<Image 
+				  src={poster} 
+				  class="w-[250px] h-[250px] object-contain md:w-[800px] md:h-[530px]" 
+				  alt="typeface" 
+				/>
+				
+				<!-- Billede 2 -->
+				<Image 
+				  src={musikfestival} 
+				  class="w-[250px] h-[250px] object-contain md:w-[800px] md:h-[500px]" 
+				  alt="typeface" 
+				/>
+				
+				<!-- Billede 3 -->
+				<Image 
+				  src={motivation} 
+				  class="w-[250px] h-[250px] object-containx md:w-[800px] md:h-[530px]" 
+				  alt="typeface" 
+				/>
+			  </div>			  
 	  
 		  <div class="max-w-sm">
-			<p class="font-playfair font-bold text-white text-lg">Logoer</p>
-			<Image 
-			src={logo} 
-			alt="logo"  
-			class="w-32 h-32 animate-fade-zoom" />
-		  </div>
-	  
-		  <div class="max-w-sm">
-			<p class="font-playfair font-bold text-white text-lg">Webdesign</p>
-			<Image src={motivation} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-			<Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-			<Image src={beauty} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+			<!-- <p class="font-playfair font-bold text-white text-lg md:mt-5">WEBDESIGN</p> -->
+			<Image src={event} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+			<Image src={invite} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
+			<Image src={artshop} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
+			<Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[300px] md:h-[300px]" alt="typeface" />
+			<Image src={beauty} class="w-[200px] h-[250px] object-contain staggered-image md:w-[300px] md:h-[350px]" alt="typeface" />
 		  </div>
 		</div>
-	  </section>
-	  
-
-	<section class="bg-pastelblue text-almostblack md:pt-20 text-center md:pb-20">
-		<div class="grid grid-cols-2 gap-4 mt-10 justify-items-center md:px-20" id="stagger">
-		  <Image src={poster} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={musikfestival} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={event} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={invite} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={artshop} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={motivation} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={beauty} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
-		</div>
-	</section>
-	  
+	  </section> 
 	  
 	  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
 	  <script type="module">
