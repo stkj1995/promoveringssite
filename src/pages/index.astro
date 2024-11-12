@@ -23,16 +23,25 @@ import '../styles/global.css';
 	</section>
 	  
 	<section class="relative grid grid-cols-5 grid-rows-4 w-screen-[90%] h-screen mt-10" id="præsentation">
+		<!-- Blå transparent baggrund -->
+		<div class="absolute top-0 left-0 w-full h-full bg-turkish opacity-20 z-0"></div>
+	  
+		<!-- Billedet -->
 		<Image 
 		  src={harlekin} 
 		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[100%] h-full object-cover opacity-5 absolute top-0 left-0" 
 		  alt="hvid strukturbaggrund" 
 		/>
 	  
+		<!-- Tekstindholdet -->
 		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-2 z-20 py-10 relative" id="hero-tekst">
-		  <h1 class="font-bold text-almostblack text-center text-2xl md:text-3xl animate__animated animate__fadeInUp mt-2" id="overskrift">Oplev SOPHIE - En skrifttype med karakter</h1>
-		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.</h2>
-		  
+		  <h1 class="font-bold text-almostblack text-center text-2xl md:text-3xl animate__animated animate__fadeInUp mt-2" id="overskrift">
+			Oplev SOPHIE - En skrifttype med karakter
+		  </h1>
+		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">
+			En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.
+		  </h2>
+	  
 		  <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl relative" id="tekst">
 			<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
 			  SOPHIE er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg
@@ -42,9 +51,9 @@ import '../styles/global.css';
 			</p>
 		  </div>
 		</div>
-	</section>
-
-	<section id="inspiration" class="bg-pastelblue py-20 text-center">
+	  </section>
+	  
+	<section id="inspiration" class="bg-beige py-20 text-center">
 		<h2 class="text-5xl font-bold text-almostblack">Historien bag SOPHIE</h2>
 		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
 		  SOPHIE er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. Inspireret af tidløse klassikere som Didot og Avenir, har SOPHIE fået tilføjet et moderne harlekinmønster, der gør den unik.
@@ -72,7 +81,7 @@ import '../styles/global.css';
 		</div>
 	</section>
 
-	<section id="details" class="bg-beige py-20 text-center">
+	<section id="details" class="bg-pastelblue py-20 text-center">
 		<h2 class="text-5xl font-bold text-almostblack">Fleksibiliteten i SOPHIE</h2>
 		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
 		  Fra vintage inspirerede plakater til moderne digitale designs – SOPHIE fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
