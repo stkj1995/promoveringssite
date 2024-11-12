@@ -1,22 +1,42 @@
-.scrollytelling {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.scrollytelling section {
-    margin-bottom: 2rem; /* Juster margin for spacing */
-    opacity: 0; /* Start som usynlig */
-    transform: translateY(20px); /* Start med en lille forskydning */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Animering af opacity og transform */
-}
-
-.scrollytelling section.in-view {
-    opacity: 1; /* Bliv synlig */
-    transform: translateY(0); /* Vend tilbage til sin normale position */
-}
-
-
+.staggered-image {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Delay til hvert billede baseret på deres rækkefølge */
+  .staggered-image:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .staggered-image:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .staggered-image:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .staggered-image:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .staggered-image:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  .staggered-image:nth-child(6) {
+    animation-delay: 1s;
+  }
+  .staggered-image:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  .staggered-image:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
 /* Regular (normal) vægt */
 @font-face {
     font-family: 'Playfair Display';

@@ -110,129 +110,44 @@ import '../styles/global.css';
 			</h3>
 		</div>
 	</section>
-	
-	
-	<section class="bg-pastelblue text-almostblack md:pt-20 text-center md:pb-20">	
-		<div class="grid grid-cols-2 gap-4 mt-10 justify-items-center md:px-20">
-		  <Image src={poster} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={musikfestival} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={event} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={invite} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={artshop} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={motivation} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={cv} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		  <Image src={beauty} class="w-[200px] h-[200px] object-contain animate__animated animate__stagger md:w-[600px] md:h-[500px]" alt="typeface" />
-		</div>  
-	</section>
 
-
-		<!-- <h1 class="font-playfair font-bold text-kingblue text-3xl">ANVENDELSE AF DISPLAYET</h1> -->
-		<!-- <h2 class="text-5xl font-bold text-almostblack">Fleksibiliteten</h2> -->
-		<!-- <h3 class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
-		  Fra vintage inspirerede plakater til moderne digitale designs – <span class="font-bold">SOPHIE</span> fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
-		</h3> -->
-
-
-	<!-- <h1 class="font-playfair font-bold text-kingblue text-3xl">
-			Dette er en H1 med Playfair Display Bold
-		  </h1>
-		  
-		  <h2 class="font-playfair font-light text-almostblack text-2xl">
-			Dette er en H2 med Playfair Display Light
-		  </h2>
-		  
-		  <p class="font-playfair font-medium text-gray-800 text-lg">
-			Dette er en normal tekst med Playfair Display Medium
-		  </p>
-		  
-		  <p class="font-playfair font-semiBold text-greenblue text-xl">
-			Dette er en normal tekst med Playfair Display Semi-Bold
-		  </p>
-		  
-		  <p class="font-playfair font-extraBold italic text-kingblue text-xl">
-			Dette er en tekst med Playfair Display Extra-Bold Italic
-		  </p>
-
-
-		  <h1 class="font-playfair font-bold text-kingblue text-h1">
-			Dette er en H1 med Playfair Display Bold (48px)
-		  </h1>
-		  
-		  <h2 class="font-playfair font-light text-almostblack text-h2">
-			Dette er en H2 med Playfair Display Light (40px)
-		  </h2>
-		  
-		  <h3 class="font-playfair font-medium text-almostblack text-h3">
-			Dette er en H3 med Playfair Display Medium (32px)
-		  </h3>
-		  
-		  <p class="font-playfair font-regular text-gray-800 text-p">
-			Dette er en normal tekst med Playfair Display Regular (16px)
-		  </p>
-		  
-		   -->
-
+	<section class="bg-pastelblue text-almostblack md:pt-20 text-center md:pb-20">
+		<div class="grid grid-cols-2 gap-4 mt-10 justify-items-center md:px-20" id="stagger">
+		  <Image src={poster} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={musikfestival} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={event} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={invite} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={artshop} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={motivation} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={cv} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		  <Image src={beauty} class="w-[200px] h-[200px] object-contain staggered-image md:w-[600px] md:h-[500px]" alt="typeface" />
+		</div>
+	  </section>
 	  
 	  
-
-
-
-
+	  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+	  <script type="module">
+		import { animate, inView as motionInView } from 'https://cdn.jsdelivr.net/npm/@motionone/dom@1.0.0-beta.10/dist/motion-one.min.js';
 	  
+		document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.staggered-image');
 
-	<!-- <div class="scrollytelling mt-72">
-	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
-		<h1 class="text-4xl font-bold text-gray-800 mb-4">Forældrestatistik: Hvad viser tallene?</h1> 
-		<p class="text-gray-700 mb-4 leading-relaxed"> 
-		  Statistikker om forældreskab giver os værdifuld indsigt i, hvordan moderne familier fungerer, og hvilke udfordringer de står over for. Seneste tal viser en stigende tendens til, at forældre i Danmark oplever stress og pres i hverdagen, samtidig med at børnene bliver mere uafhængige i deres valg.
-		</p>
-	  </section>
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				// Tilføj animate klassen, når billedet er synligt
+				entry.target.classList.add('animate');
+				// Stop med at observere dette billede
+				observer.unobserve(entry.target);
+			}
+			});
+		}, { threshold: 0.5 }); // Observerer, når 50% af billedet er synligt
 
-	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
-		<h2 class="text-2xl font-semibold text-gray-700 mb-2">Nøgleindsigt</h2>
-		<ul class="list-disc list-inside text-gray-600 mb-4">
-			<li>En nylig undersøgelse viser, at over 40% af forældre rapporterer, at de føler sig overvældede af ansvaret.</li>
-			<li>Forældre med højere uddannelsesniveauer involverer sig ofte mere i deres børns skoleliv.</li>
-			<li>Der er et markant skift i holdningen til ligestilling i hjemmet; flere mænd tager aktivt del i børneopdragelsen.</li>
-			<li>Statistikker viser, at børn i alderen 10-15 år begynder at tage større beslutninger om deres sociale liv, herunder venner og fritidsaktiviteter.</li>
-		</ul>
+		// Start observering af billederne
+		images.forEach(image => {
+			observer.observe(image);
+		});
+		});
 
-		
-
-		<Button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-4">Læs mere</Button> <br>
-		<p class="text-gray-600 mb-4">For flere detaljer, besøg <Link href="https://www.kea.dk" target="_blank" class="text-blue-500 hover:underline">Københavns Erhvervsakademi</Link>.</p>
-	  </section>
-
-	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
-		<h2 class="text-2xl font-semibold text-gray-700 mb-2">Hvordan påvirker det vores børn?</h2>
-		<p class="text-gray-600 mb-4">Det stigende pres på forældre har ikke kun en indvirkning på deres mentale helbred, men også på børnenes udvikling. Ifølge eksperter kan et belastet forældreskab føre til, at børnene søger trøst i usunde vaner, som f.eks. at eksperimentere med nikotin eller alkohol.</p>
-	  </section>
-
-	  <section class="max-w-2xl mx-auto py-8 px-6 bg-white shadow-md rounded-lg animate__animated">
-		<h2 class="text-2xl font-semibold text-gray-700 mb-2">Konklusion</h2>
-		<p class="text-gray-600 mb-4">Forældre har brug for støtte i en verden, der konstant ændrer sig. At forstå og adressere de udfordringer, forældre står over for, er afgørende for at sikre, at både forældre og børn kan trives i samfundet.</p>
-	  </section>
-	</div> -->
-</MainLayout>
-
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
-
-<script>	
-  document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('.scrollytelling section');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          entry.target.classList.add('animate__fadeIn'); // Tilføj en fade-in animation
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
-</script>
+	  </script>
+	  
