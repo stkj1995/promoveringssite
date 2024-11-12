@@ -3,26 +3,33 @@ import Link from "./Link.astro";
 import clown from "../assets/images/clown.png";
 import Image from "astro/components/Image.astro";
 import harlekin from "../assets/images/harlekin.jpg";
+import Button from "./Button.astro";
 ---
-<!-- <footer class="bg-gray-800 text-white py-4">
-	<div class="max-w-6xl mx-auto px-4 text-center">
-		<p>© 2024 Forældrestatistik. Alle rettigheder forbeholdes.</p>
-		<p><Link href="/privatlivspolitik" class="hover:underline">Privatlivspolitik</Link> | <Link href="/brugsbetingelser" class="hover:underline">Brugsbetingelser</Link></p>
+<footer class="py-4 mx-auto px-4 flex flex-col justify-center items-center relative">
+	<!-- H1 overskrift, lagt øverst med z-index -->
+	<h1 class="font-playfair font-bold text-brown text-3xl my-32 z-20">
+	  Giv dit design en stemme med SOPHIE – en skrifttype, der taler for sig selv.
+	</h1>
+  
+	<!-- Button placeret øverst med z-index -->
+	<div class="z-30 mb-32">
+	  <Button></Button>
 	</div>
-
-
+  
+	<!-- Harlekin baggrund -->
+	<Image 
+	  src={harlekin} 
+	  class="w-[100%] h-full object-cover opacity-30 absolute top-0 left-0 z-0" 
+	  alt="harlekin baggrund" 
+	/>
 	
-</footer> -->
-
-<footer class="py-4 mx-auto px-4 flex justify-center items-center ">
+	<!-- Clown logo -->
 	<Image 
-	src={harlekin} 
-	class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[100%] h-full object-cover opacity-5 absolute top-0 left-0" 
-	alt="harlekin baggrund" 
-  />
-
-	<Image 
-		src={clown} 
-		alt="logo"  
-		class="w-32 h-32 top-0 left-0 z-0" />
-</footer>
+	  src={clown} 
+	  alt="logo"  
+	  class="w-40 h-40 z-10 filter grayscale mb-32" 
+	/>
+  </footer>
+  
+  
+  

@@ -29,6 +29,7 @@ export default {
         h2: '40px',  // H2 størrelse
         h3: '32px',  // H3 størrelse
         p: '16px',   // P (paragraf) størrelse
+        button: '40px', // button størrelse
       },
       animation: {
         'fade-zoom': 'fadeZoom 1s ease-in-out',

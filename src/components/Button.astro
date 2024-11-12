@@ -1,5 +1,7 @@
 ---
+// Button.astro
+const { text = "DOWNLOAD DISPLAY HER" } = Astro.props;  // Tilføj mulighed for at sende tekst som prop
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
-</div>
+<button class="border-20 bg-turkish text-kingblue font-bold font-playfair p-5 text-xl rounded-lg">
+  {text}
+</button>
