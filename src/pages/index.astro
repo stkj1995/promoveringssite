@@ -7,63 +7,62 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import whitewall from '../assets/images/whitewall.jpg';
 import harlekin from '../assets/images/harlekin.jpg';
-import downarrow from '../assets/images/down-arrow.png';
+import downarrow from '../assets/images/down-arrow-black.png';
 import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---
 
 <MainLayout title="Promoveringssite">
-	<section class="relative grid-cols-5 w-full min-h-[200px] flex items-start justify-center" id="hero">
+	<section class="relative grid-cols-5 w-full min-h-[100px] flex items-start justify-center" id="hero">
 		<div class="col-start-1 col-span-5 flex justify-center items-center z-10 animate__animated animate__fadeInUp animate__delay-1s">
-		  <Image 
-			src={sophietypeface} 
-			class="w-[800px] h-[600px] object-contain animate__animated animate__zoomIn animate__delay-1s" 
-			alt="typeface" 
-		  />
+			<Image 
+				src={sophietypeface} 
+				class="w-[800px] h-[500px] object-contain animate__animated animate__zoomIn animate__delay-1s" 
+				alt="typeface" 
+			/>
 		</div>
 		
 		<!-- Downarrow logo med justeret størrelse og placering -->
-		<div class="absolute top-[calc(100%+10px)] flex justify-center items-center z-10">
-		  <Image 
-			src={downarrow} 
-			class="w-[20px] h-[20px] object-contain" 
-			alt="down arrow" 
-		  />
-		</div>
-	  </section>
-	  
+		<a href="#præsentation" class="absolute top-[calc(100%+10px)] flex justify-center items-center z-10">
+			<Image 
+				src={downarrow} 
+				class="w-[60px] h-[60px] object-contain" 
+				alt="down arrow" 
+			/>
+		</a>
 	</section>
 	  
-	<section class="relative grid grid-cols-5 grid-rows-4 w-screen-[90%] h-screen mt-10" id="præsentation">
+	<section class="relative grid grid-cols-5 grid-rows-4 w-screen-[90%] h-screen mt-36" id="præsentation">
 		<!-- Blå transparent baggrund -->
 		<div class="absolute top-0 left-0 w-full h-full bg-turkish opacity-20 z-0"></div>
 	  
 		<!-- Billedet -->
 		<Image 
-		  src={harlekin} 
-		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[100%] h-full object-cover opacity-5 absolute top-0 left-0" 
-		  alt="hvid strukturbaggrund" 
+			src={harlekin} 
+			class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-full h-full object-cover opacity-5 absolute top-0 left-0" 
+			alt="hvid strukturbaggrund" 
 		/>
 	  
 		<!-- Tekstindholdet -->
 		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-2 z-20 py-10 relative" id="hero-tekst">
-		  <h1 class="font-playfair font-bold text-kingblue text-3xl text-center animate__animated animate__fadeInUp mt-2" id="overskrift">
-			OPLEV EN SKRIFTTYPE MED KARAKTER
-		  </h1>
-		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">
-			En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.
-		  </h2>
-	  
-		  <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl relative" id="tekst">
-			<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
-			  SOPHIE er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg
-			</p>
-			<p class="text-right text-lg md:w-1/2 text-greenblue" id="copy">
-			  Velkommen til præsentationen af SOPHIE – en skrift designet til at være lige så tidløs som den er modig. Med SOPHIE bliver ord til kunst.
-			</p>
-		  </div>
+			<h1 class="font-playfair font-bold text-kingblue text-3xl text-center animate__animated animate__fadeInUp mt-2" id="overskrift">
+				OPLEV EN SKRIFTTYPE MED KARAKTER
+			</h1>
+			<h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">
+				En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.
+			</h2>
+		
+			<div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl relative" id="tekst">
+				<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
+					SOPHIE er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg
+				</p>
+				<p class="text-right text-lg md:w-1/2 text-greenblue" id="copy">
+					Velkommen til præsentationen af SOPHIE – en skrift designet til at være lige så tidløs som den er modig. Med SOPHIE bliver ord til kunst.
+				</p>
+			</div>
 		</div>
-	  </section>
+	</section>
+	
 	  
 	<section id="inspiration" class="bg-beige py-20 text-center">
 		<h1 class="font-playfair font-bold text-kingblue text-3xl">INSPIRATION OG KONCEPT</h1>
