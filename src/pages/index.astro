@@ -15,6 +15,7 @@ import cv from '../assets/images/cv.png';
 import beauty from '../assets/images/beauty.png';
 import artshop from '../assets/images/artshop.png';
 import invite from '../assets/images/invite.png';
+import mood from '../assets/images/mood.png';
 import sophietypeface from '../assets/images/sophie_typeface.webp';
 import '../styles/global.css'; 
 ---  
@@ -60,7 +61,6 @@ import '../styles/global.css';
 			</h2>
 		  
 			<div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-8 mx-auto max-w-5xl relative md:mt-12 md:mb-10 px-20" id="tekst">
- 
 				<h3 class="font-playfair text-left text-lg md:text-2xl text-greenblue w-full" id="copy">
 				  Velkommen til præsentationen af <span class="font-bold text-turkish italic">SOPHIE</span> – en skrift designet til at være lige så tidløs som den er modig. Med <span class="font-bold text-turkish italic">SOPHIE</span> bliver ord til kunst.
 				</h3>
@@ -73,15 +73,26 @@ import '../styles/global.css';
 					alt="typeface" 
 				  />
 				</div>
-
+	
 				<h3 class="font-playfair text-right text-xl md:text-2xl text-kingblue italic w-full" id="citat">
 				  <span class="font-bold text-turkish">SOPHIE</span> er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg.
 				</h3>
 			</div>
 		</div>
 	</section>
+	
+	<section class="bg-almostblack row-start-2 row-span-5 flex justify-center items-center z-0 md:mt-[140px]">
+		<Image 
+		  src={mood} 
+		  class="w-[1000px] h-[1000px] object-contain animate__animated animate__zoomIn" 
+		  alt="typeface" 
+		/>
+	</section>
+	
+	
+
 	  
-	<section id="inspiration" class="bg-beige md:pt-20 md:pb-20 text-center md:text-center md:mt-36">
+	<section id="inspiration" class="bg-beige md:pt-20 md:pb-20 text-center md:text-center md:mt-0">
 		<h1 class="font-playfair font-bold text-kingblue text-3xl md:text-5xl text-center md:mt-10">INSPIRATION OG KONCEPT</h1>
 	  
 		<!-- Text content with margin adjustments for symmetry -->
@@ -179,22 +190,22 @@ import '../styles/global.css';
 	<script type="module">
 	  import { animate, inView as motionInView } from 'https://cdn.jsdelivr.net/npm/@motionone/dom@1.0.0-beta.10/dist/motion-one.min.js';
 	
-	  document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.staggered-image');
+		document.addEventListener('DOMContentLoaded', function() {
+	const images = document.querySelectorAll('.staggered-image');
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate'); // Add animation class on scroll
-        observer.unobserve(entry.target); // Stop observing after animation
-      }
-    });
-  }, { threshold: 0.5 });
+	const observer = new IntersectionObserver((entries, observer) => {
+		entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add('animate'); // Add animation class on scroll
+			observer.unobserve(entry.target); // Stop observing after animation
+		}
+		});
+	}, { threshold: 0.5 });
 
-  images.forEach(image => {
-    observer.observe(image);
-  });
-});
+	images.forEach(image => {
+		observer.observe(image);
+	});
+	});
 
 	</script>
 	
