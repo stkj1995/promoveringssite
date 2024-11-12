@@ -15,3 +15,113 @@
     opacity: 1; /* Bliv synlig */
     transform: translateY(0); /* Vend tilbage til sin normale position */
 }
+
+
+/* Regular (normal) vægt */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Bold vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Italic vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  /* Bold Italic vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* Light vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-Light.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  /* Light Italic vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-LightItalic.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  /* Medium vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-Medium.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* Medium Italic vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-MediumItalic.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  /* Semi-Bold vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  /* Semi-Bold Italic vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-SemiBoldItalic.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  /* Extra-Bold vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  /* Extra-Bold Italic vægt */
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/src/assets/fonts/PlayfairDisplay-ExtraBoldItalic.woff2') format('woff2'),
+         url('/src/assets/fonts/PlayfairDisplay-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+  }
+  
