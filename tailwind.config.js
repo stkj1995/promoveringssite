@@ -12,6 +12,15 @@ export default {
         pastelblue: "#DFEEFC", //pastelblå
         brown: "#817141", //brun
       },
+      animation: {
+        'fade-zoom': 'fadeZoom 1s ease-in-out',
+      },
+      keyframes: {
+        fadeZoom: {
+          '0%': { opacity: '0', transform: 'scale(0.8)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+      },
     },
   },
   plugins: [

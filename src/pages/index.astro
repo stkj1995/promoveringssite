@@ -12,38 +12,39 @@ import '../styles/global.css';
 ---
 
 <MainLayout title="Promoveringssite">
-	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen" id="hero">
-		<Image 
-		  src={whitewall} 
-		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[800px] h-[1008px] md:w-full md:object-cover opacity-40 mb-10" 
-		  alt="hvid strukturbaggrund" 
-		/>
-		
-		<div class="col-start-1 col-span-5 row-start-1 row-span-5 flex justify-center items-center z-10">
+	<section class="relative grid-cols-5 w-full min-h-[400px] flex items-start justify-center" id="hero">
+		<div class="col-start-1 col-span-5 flex justify-center items-center z-10 animate__animated animate__fadeInUp animate__delay-1s">
 		  <Image 
 			src={sophietypeface} 
-			class="w-[800px] h-[800px] object-contain" 
+			class="w-[600px] h-[600px] object-contain animate__animated animate__zoomIn animate__delay-1s" 
 			alt="typeface" 
 		  />
 		</div>
+	</section>
 	  
-		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-4 md:row-span-2 z-20 mt-16 py-10" id="hero-tekst">
+	<section class="relative grid grid-cols-5 grid-rows-4 w-screen h-screen mt-10" id="præsentation">
+		<Image 
+		  src={whitewall} 
+		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-full h-full object-cover opacity-40 absolute top-0 left-0" 
+		  alt="hvid strukturbaggrund" 
+		/>
+	  
+		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-2 z-20 py-10 relative" id="hero-tekst">
 		  <h1 class="font-bold text-almostblack text-center text-2xl md:text-3xl animate__animated animate__fadeInUp mt-2" id="overskrift">Oplev SOPHIE - En skrifttype med karakter</h1>
 		  <h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.</h2>
-		
-		  <section class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl" id="præsentation">
+		  
+		  <div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl relative" id="tekst">
 			<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
 			  SOPHIE er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg
 			</p>
 			<p class="text-right text-lg md:w-1/2 text-greenblue" id="copy">
 			  Velkommen til præsentationen af SOPHIE – en skrift designet til at være lige så tidløs som den er modig. Med SOPHIE bliver ord til kunst.
 			</p>
-		  </section>
-		  
+		  </div>
 		</div>
 	</section>
 
-	<section id="inspiration" class="bg-pastelblue py-20 text-center mt-52">
+	<section id="inspiration" class="bg-pastelblue py-20 text-center">
 		<h2 class="text-5xl font-bold text-almostblack">Historien bag SOPHIE</h2>
 		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
 		  SOPHIE er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. Inspireret af tidløse klassikere som Didot og Avenir, har SOPHIE fået tilføjet et moderne harlekinmønster, der gør den unik.
