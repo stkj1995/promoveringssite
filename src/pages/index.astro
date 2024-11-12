@@ -13,74 +13,92 @@ import '../styles/global.css';
 ---
 
 <MainLayout title="Promoveringssite">
-	<section class="relative grid-cols-5 w-full min-h-[100px] flex items-start justify-center" id="hero">
+	<section class="relative grid-cols-5 w-[99%] min-h-[100px] flex items-start justify-center" id="hero">
 		<div class="col-start-1 col-span-5 flex justify-center items-center z-10 animate__animated animate__fadeInUp animate__delay-1s">
-			<Image 
-				src={sophietypeface} 
-				class="w-[800px] h-[500px] object-contain animate__animated animate__zoomIn animate__delay-1s" 
-				alt="typeface" 
-			/>
+		  <Image 
+			src={sophietypeface} 
+			class="w-[800px] h-[500px] object-contain animate__animated animate__zoomIn" 
+			alt="typeface" 
+		  />
 		</div>
-		
+	  
 		<!-- Downarrow logo med justeret størrelse og placering -->
-		<a href="#præsentation" class="absolute top-[calc(100%+10px)] flex justify-center items-center z-10">
-			<Image 
-				src={downarrow} 
-				class="w-[60px] h-[60px] object-contain" 
-				alt="down arrow" 
-			/>
+		<a href="#hero-tekst" class="absolute top-[calc(100%+10px)] flex justify-center items-center z-10">
+		  <Image 
+			src={downarrow} 
+			class="w-[60px] h-[60px] object-contain" 
+			alt="down arrow" 
+		  />
 		</a>
 	</section>
-	  
-	<section class="relative grid grid-cols-5 grid-rows-4 w-screen-[90%] h-screen mt-36" id="præsentation">
+		
+	<section class="relative grid grid-cols-5 grid-rows-5 w-screen h-screen" id="præsentation">
 		<!-- Blå transparent baggrund -->
-		<div class="absolute top-0 left-0 w-full h-full bg-turkish opacity-20 z-0"></div>
+		<div class="absolute top-0 left-0 w-[99%] h-[84%] md:h-[102%] bg-turkish opacity-20 z-0 mt-28 md:mt-32"></div>
 	  
 		<!-- Billedet -->
 		<Image 
-			src={harlekin} 
-			class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-full h-full object-cover opacity-5 absolute top-0 left-0" 
-			alt="harlekin baggrund" 
+		  src={harlekin} 
+		  class="col-start-1 col-span-5 row-start-1 row-span-5 z-0 w-[99%] h-[85%] md:h-[102%] object-cover opacity-5 absolute top-0 left-0 mt-28 md:mt-32" 
+		  alt="harlekin baggrund" 
 		/>
-	  
-		<!-- Tekstindholdet -->
-		<div class="col-start-1 row-start-4 col-span-5 md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-2 z-20 py-10 relative" id="hero-tekst">
-			<h1 class="font-playfair font-bold text-kingblue text-3xl text-center animate__animated animate__fadeInUp mt-2" id="overskrift">
-				OPLEV EN SKRIFTTYPE MED KARAKTER
-			</h1>
-			<h2 class="text-center text-m md:text-l animate__animated animate__fadeInUp text-kingblue" id="underoverskrift">
-				En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.
-			</h2>
 		
-			<div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-40 mx-auto max-w-5xl relative" id="tekst">
-				<p class="text-left text-xl text-kingblue italic md:w-1/2" id="citat">
-					SOPHIE er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg
-				</p>
-				<p class="text-right text-lg md:w-1/2 text-greenblue" id="copy">
-					Velkommen til præsentationen af SOPHIE – en skrift designet til at være lige så tidløs som den er modig. Med SOPHIE bliver ord til kunst.
-				</p>
-			</div>
+		<!-- Tekstindholdet -->
+		<div class="col-start-1 row-start-2 col-span-5 md:col-start-2 md:col-span-3 md:row-start-2 md:row-span-2 z-20 py-10 relative" id="hero-tekst">
+		  <h1 class="font-playfair font-bold text-kingblue text-3xl md:text-4xl text-center md:mt-24" id="overskrift">
+			OPLEV EN SKRIFTTYPE MED KARAKTER
+		  </h1>
+		  <h2 class="text-center text-xl md:text-2xl font-playfair font-semibold text-turkish mt-6 max-w-3xl mx-auto md:mt-16">
+			En unik display-skrift, der kombinerer klassisk elegance og moderne flair. Designet til at stå stærkt og skabe indtryk, hver gang.
+		  </h2>
+		
+		  <div class="flex flex-col md:flex-row items-center justify-center gap-8 mx-auto max-w-5xl relative md:mt-40 px-20" id="tekst">
+			<h3 class="font-playfair text-left text-xl md:text-2xl text-kingblue italic w-full md:w-1/2 md:mt-8" id="citat">
+			  <span class="font-bold text-turkish">SOPHIE</span> er skabt til dig, der søger en tidløs, men dristig skrift – inspireret af de klassiske serif-linjer med et twist af eksperimenterende leg.
+			</h3>
+			<h3 class="font-playfair text-right text-lg md:text-2xl text-greenblue w-full md:w-1/2" id="copy">
+			  Velkommen til præsentationen af <span class="font-bold text-turkish italic">SOPHIE</span> – en skrift designet til at være lige så tidløs som den er modig. Med <span class="font-bold text-turkish italic">SOPHIE</span> bliver ord til kunst.
+			</h3>
+		  </div>
 		</div>
 	</section>
-	
-	<section id="inspiration" class="bg-beige py-20 text-center">
+	  
+	<section id="inspiration" class="bg-beige md:pt-20 md:pb-20 text-center md:text-center md:mt-36">
 		<h1 class="font-playfair font-bold text-kingblue text-3xl">INSPIRATION OG KONCEPT</h1>
-		<h2 class="text-3xl font-bold text-almostblack">Historien bag</h2>
-		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
-		  SOPHIE er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. Inspireret af tidløse klassikere som Didot og Avenir, har SOPHIE fået tilføjet et moderne harlekinmønster, der gør den unik.
-		</p>
-		<blockquote class="italic text-xl text-turkish mt-8 mx-auto max-w-2xl">
-		  "Når klassisk møder moderne, opstår noget helt nyt – SOPHIE."
-		</blockquote>
+		<h2 class="font-playfair font-light text-turkish text-2xl md:text-3xl mt-4 md:mt-6">Historien bag displayet</h2>
+	  
+		<!-- Text content with margin adjustments for symmetry -->
+		<div class="flex flex-col md:flex-row items-center justify-center gap-8 mt-6 mx-auto max-w-3xl px-4">
+		  <h3 class="font-playfair text-lg text-almostblack text-left md:w-1/2">
+			<span class="font-bold text-brown italic">SOPHIE</span> er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. Inspireret af tidløse klassikere som Didot og Avenir, har SOPHIE fået tilføjet et moderne harlekinmønster, der gør den unik.
+			<br><br> <span class="font-bold text-brown italic">SOPHIE</span> er ikke bare en skrifttype; den er en rejse gennem typografiens historie og dens muligheder for at kombinere forskellige stilarter. 
+			<br><br> Inspireret af tidløse klassikere som Didot og Avenir, har <span class="font-bold text-brown italic">SOPHIE</span> fået tilføjet et legende harlekinmønster, der tilføjer en moderne og eksperimenterende dimension. 
+			<br><br> Det gør <span class="font-bold text-brown italic">SOPHIE</span> perfekt til visuelle statement-projekter, der kræver mere end blot bogstaver.
+		  </h3> 
+		  
+			<!-- Container with flex layout for positioning -->
+		<div class="flex flex-col items-center justify-center gap-10 md:mt-10">
+			<!-- Blockquote with margin adjustments -->
+			<blockquote class="font-playfair font-semibold italic text-xl md:text-3xl text-turkish mx-auto max-w-2xl md:w-1/2 text-right md:text-right md:mt-10 md:mr-2">
+			"Når <br> klassisk <br> møder <br> moderne, <br> opstår <br> noget <br> helt <br> nyt."<br>
+			</blockquote>
+		
+			<!-- SOPHIE image to the right with zoom animation -->
+			<Image 
+			src={sophietypeface} 
+			class="w-[200px] h-[200px] object-contain animate__animated animate__zoomIn md:w-[300px] md:h-[200px]" 
+			alt="typeface" 
+			/>
+		</div>
 	</section>
-
-	<section id="examples" class="bg-kingblue text-white py-20 text-center">
+		
+	<section id="examples" class="bg-kingblue text-white md:pt-20 text-center">
 		<h1 class="font-playfair font-bold text-white text-3xl">EKSEMPLER</h1>
-		<h2 class="text-5xl font-bold text-almostblack">Skab stærke designs med SOPHIE-display</h2>
-		<p class="text-xl mt-4 ">Se, hvordan SOPHIE kan bruges i plakater, logoer, og meget mere.</p>
-		<p class="text-lg mt-6 mx-auto max-w-3xl">
-		  SOPHIE er designet til at fange opmærksomhed og løfte ethvert design. Dens skarpe linjer og mønster skaber en smuk kontrast i både klassiske og moderne designs.
-		</p>
+		<h2 class="font-playfair text-5xl font-bold text-almostblack">Skab stærke designs med <span class="font-bold">SOPHIE</span>-display</h2>
+		<p class="font-playfair text-xl mt-4 ">Se, hvordan SOPHIE kan bruges i plakater, logoer, og meget mere.</p>
+		<h3 class="font-playfair text-lg mt-6 mx-auto max-w-3xl">
+			<span class="font-bold">SOPHIE</span> er designet til at fange opmærksomhed og løfte ethvert design. Dens skarpe linjer og mønster skaber en smuk kontrast i både klassiske og moderne designs.
+		</h3>
 		<div class="flex justify-center mt-10 space-x-8">
 		  <div class="w-1/3">
 			<img src="/path/to/mockup1.jpg" alt="Plakat Mockup" class="rounded-lg shadow-lg">
@@ -96,9 +114,9 @@ import '../styles/global.css';
 	<section id="details" class="bg-pastelblue py-20 text-center">
 		<h1 class="font-playfair font-bold text-kingblue text-3xl">ANVENDELSE</h1>
 		<h2 class="text-5xl font-bold text-almostblack">Fleksibiliteten i displayet</h2>
-		<p class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
-		  Fra vintage inspirerede plakater til moderne digitale designs – SOPHIE fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
-		</p>
+		<h3 class="text-lg mt-6 mx-auto max-w-3xl text-almostblack">
+		  Fra vintage inspirerede plakater til moderne digitale designs – <span class="font-bold">SOPHIE</span> fungerer i mange kontekster. Den tilføjer et unikt, stilfuldt element til dit design.
+		</h3>
 	</section>
 
 	<!-- <h1 class="font-playfair font-bold text-kingblue text-3xl">
